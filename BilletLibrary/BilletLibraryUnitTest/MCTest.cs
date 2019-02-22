@@ -12,7 +12,7 @@ namespace BilletLibraryUnitTest
             //arrange
             var mc = new MC();
             //act
-            decimal pris = mc.Pris();
+            decimal pris = mc.SetPrice();
             //assert
             Assert.AreEqual(125, pris);
         }
@@ -22,7 +22,7 @@ namespace BilletLibraryUnitTest
             //arrange
             var mc = new MC();
             //act
-            string køretøj = mc.Køretøj();
+            string køretøj = mc.SetKøretøj();
             //assert
             Assert.AreEqual("Motorcykel", køretøj);
         }

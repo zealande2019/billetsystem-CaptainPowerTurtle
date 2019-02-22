@@ -2,22 +2,31 @@
 
 namespace BilletLibrary
 {
-    public class Bil
+    public class Bil : BaseKlasse
     {
         //I disse datafields, opretter vi henholdsvids en string til NummerPlade, og en DateTime til Dato
-        public string NummerPlade;
-        public DateTime Dato;
+        public string VisNummerplade()
+        {
+            return NummerPlade;
+        }
+
+        public DateTime ShowDato()
+        {
+            return Dato;
+        }
 
         //Her sætter vi prisen for hvad det vil koste for en bil
-        public decimal Pris()
+        public decimal SetPrice()
         {
-            return 240;
+            _pris = 240;
+            return _pris;
         }
 
         //Her retunere vi typen af køretøj, i det tilfælde en bil.
-        public string Køretøj()
+        public string SetKøretøj()
         {
-            return "Bil";
+            _køretøjType = "Bil";
+            return _køretøjType;
         }
     }
 }
