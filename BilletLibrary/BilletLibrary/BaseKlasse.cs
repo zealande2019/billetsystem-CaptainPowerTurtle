@@ -6,25 +6,17 @@ namespace BilletLibrary
 {
     public abstract class BaseKlasse
     {
-        protected string NummerPlade;
-        protected DateTime Dato;
-        protected decimal _pris;
-        protected string _køretøjType;
+        protected string _nummerPlade;
+        protected DateTime _dato;
 
-        protected void Pris(Decimal bPris)
-        {
-            _pris = bPris;
-        }
-        protected void Køretøjtype(String bKøretøjType)
-        {
-            _køretøjType = bKøretøjType;
-        }
+        public abstract decimal Pris();
+        public abstract string Type();
 
         protected void NummerPladeCheck()
         {
-            if (NummerPlade.Length < 7 )
+            if (_nummerPlade.Length < 7 )
             {
-                throw new ArgumentOutOfRangeException();
+                throw new ArgumentOutOfRangeException("Nummerplade er for lang!");
             }
         }
     }

@@ -12,7 +12,7 @@ namespace BilletLibraryUnitTest
             //arrange
             var mc = new MC();
             //act
-            decimal pris = mc.SetPrice();
+            decimal pris = mc.Pris();
             //assert
             Assert.AreEqual(125, pris);
         }
@@ -22,9 +22,19 @@ namespace BilletLibraryUnitTest
             //arrange
             var mc = new MC();
             //act
-            string køretøj = mc.SetKøretøj();
+            string køretøj = mc.Type();
             //assert
             Assert.AreEqual("Motorcykel", køretøj);
+        }
+        [TestMethod]
+        public void MCNummerpladeTjek()
+        {
+            //arrange
+            var mc = new MC();
+            //act
+            string nummerplade = mc.Nummerplade();
+            //assert
+            Assert.AreEqual("Motorcykel", nummerplade);
         }
     }
 }

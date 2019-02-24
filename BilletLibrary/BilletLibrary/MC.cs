@@ -5,28 +5,26 @@ namespace BilletLibrary
     public class MC : BaseKlasse
     {
         //I disse datafields, opretter vi henholdsvids en string til NummerPlade, og en DateTime til Dato.
-        public string VisNummerplade()
+        public string Nummerplade()
         {
-            return NummerPlade;
+            return _nummerPlade;
         }
 
-        public DateTime ShowDato()
+        public DateTime Dato()
         {
-            return Dato;
+            return _dato;
         }
 
         //Her sætter vi prisen for hvad det vil koste for en motorcykel.
-        public decimal SetPrice()
+        public override decimal Pris()
         {
-            _pris = 125;
-            return _pris;
+            return 125;
         }
 
         //Her retunere vi typen af køretøj, i det tilfælde en motorcykel.
-        public string SetKøretøj()
+        public override string Type()
         {
-            _køretøjType = "Motorcykel";
-            return _køretøjType;
+            return "Motorcykel";
         }
     }
 }
