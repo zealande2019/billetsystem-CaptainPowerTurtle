@@ -2,17 +2,31 @@
 
 namespace BilletLibrary
 {
+    /// <summary>
+    /// Enb specifik klasse, som arver fra baseklassen, i dette tilføje repræsenter denne klasse motorcykler
+    /// </summary>
     public class MC : BaseKlasse
     {
+
+        /// <summary>
+        /// Opretter en ny instans af <see cref="MC"/>
+        /// </summary>
         public MC() { }
+        /// <summary>
+        /// Opretter en ny instans af <see cref="MC"/> med nummerplade og dato
+        /// </summary>
         public MC(string nummerplade, DateTime dato) : base(nummerplade, dato) { }
-        //Her sætter vi prisen for hvad det vil koste for en motorcykel.
+        /// <summary>
+        /// Hvad det koster at krydse broen
+        /// </summary>
         public override decimal Pris()
         {
             return 125;
         }
 
-        //Her retunere vi typen af køretøj, i det tilfælde en motorcykel.
+        /// <summary>
+        /// Hvilken type køretøj det er
+        /// </summary>
         public override string Type()
         {
             return "Motorcykel";

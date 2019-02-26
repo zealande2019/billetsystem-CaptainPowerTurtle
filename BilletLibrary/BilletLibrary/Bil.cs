@@ -4,13 +4,25 @@ namespace BilletLibrary
 {
     public class Bil : BaseKlasse
     {
-        //Her sætter vi prisen for hvad det vil koste for en bil.
+        /// <summary>
+        /// Opretter en ny instans af <see cref="Bil"/>
+        /// </summary>
+        public Bil() { }
+        /// <summary>
+        /// Opretter en ny instans af <see cref="Bil"/> med nummerplade og dato
+        /// </summary>
+        public Bil(string nummerplade, DateTime dato) : base(nummerplade, dato) { }
+        /// <summary>
+        /// Hvad det koster at krydse broen
+        /// </summary>
         public override decimal Pris()
         {
             return 240;
         }
 
-        //Her retunere vi typen af køretøj, i det tilfælde en bil.
+        /// <summary>
+        /// Hvilken type køretøj det er
+        /// </summary>
         public override string Type()
         {
             return "Bil";
