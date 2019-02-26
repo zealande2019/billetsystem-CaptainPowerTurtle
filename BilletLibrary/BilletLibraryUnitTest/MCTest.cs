@@ -37,6 +37,7 @@ namespace BilletLibraryUnitTest
             //assert
             Assert.AreEqual("Motorcykel", køretøj);
         }
+        [TestMethod]
         public void MCRabatTest_True()
         {
             //arrange
@@ -46,6 +47,7 @@ namespace BilletLibraryUnitTest
             //assert
             Assert.AreEqual(rabat, 118.75M);
         }
+        [TestMethod]
         public void MCRabatTest_False()
         {
             //arrange

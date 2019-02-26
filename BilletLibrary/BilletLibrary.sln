@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilletLibrary", "BilletLibrary\BilletLibrary.csproj", "{02D24F1D-7EAA-4B15-B103-0A0361982F4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BilletLibrary", "BilletLibrary\BilletLibrary.csproj", "{02D24F1D-7EAA-4B15-B103-0A0361982F4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilletLibraryUnitTest", "BilletLibraryUnitTest\BilletLibraryUnitTest.csproj", "{3C8636D8-7BFF-4D75-9F71-F03D43DC9756}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BilletLibraryUnitTest", "BilletLibraryUnitTest\BilletLibraryUnitTest.csproj", "{3C8636D8-7BFF-4D75-9F71-F03D43DC9756}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreBaeltBilletLibrary", "StoreBaeltBilletLibrary\StoreBaeltBilletLibrary.csproj", "{656E1EBD-78EB-4560-B649-7D9D71B210B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OeresundBilletLibrary", "OeresundBilletLibrary\OeresundBilletLibrary.csproj", "{7358BB4D-CCE0-46E9-959D-B750EBE27FB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{3C8636D8-7BFF-4D75-9F71-F03D43DC9756}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C8636D8-7BFF-4D75-9F71-F03D43DC9756}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C8636D8-7BFF-4D75-9F71-F03D43DC9756}.Release|Any CPU.Build.0 = Release|Any CPU
+		{656E1EBD-78EB-4560-B649-7D9D71B210B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{656E1EBD-78EB-4560-B649-7D9D71B210B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{656E1EBD-78EB-4560-B649-7D9D71B210B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{656E1EBD-78EB-4560-B649-7D9D71B210B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7358BB4D-CCE0-46E9-959D-B750EBE27FB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7358BB4D-CCE0-46E9-959D-B750EBE27FB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7358BB4D-CCE0-46E9-959D-B750EBE27FB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7358BB4D-CCE0-46E9-959D-B750EBE27FB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

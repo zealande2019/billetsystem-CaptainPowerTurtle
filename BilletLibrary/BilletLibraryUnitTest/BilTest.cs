@@ -47,6 +47,7 @@ namespace BilletLibraryUnitTest
             //assert
             Assert.AreEqual(rabat, 228M);
         }
+        [TestMethod]
         public void BilRabatTest_False()
         {
             //arrange
