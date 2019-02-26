@@ -1,14 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Text;
 
 namespace BilletLibrary
 {
     public abstract class BaseKlasse
     {
-        protected string _nummerPlade;
-        protected DateTime _dato;
-        public abstract decimal Pris();
+        private string _nummerplade;
+
+        public BaseKlasse() { }
+
+        public BaseKlasse(string nummerplade, DateTime dato)
+        {
+            Nummerplade = nummerplade;
+            Dato = dato;
+        }
+        public string Nummerplade
+        {
+            get { return _nummerplade;}
+            set
+            {
+                if (value.Length > 7)
+                    throw new ArgumentException("Nummerplade kan ikke være længere end 7 tegn.");
+                _nummerplade = value;
+            }
+        }
         public virtual decimal RabatPris(bool brobizz = false)
         {
             decimal rabat = 0;
@@ -18,14 +35,9 @@ namespace BilletLibrary
             }
             return Pris() - rabat;
         }
-        public abstract string Type();
+        public DateTime Dato { get; set; }
 
-        protected void NummerPlade()
-        {
-            if (_nummerPlade.Length < 7 )
-            {
-                throw new ArgumentOutOfRangeException("Nummerplade er for lang!");
-            }
-        }
+        public abstract string Type();
+        public abstract decimal Pris();
     }
 }

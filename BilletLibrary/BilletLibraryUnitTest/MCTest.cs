@@ -1,4 +1,5 @@
-﻿using BilletLibrary;
+﻿using System;
+using BilletLibrary;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BilletLibraryUnitTest
@@ -10,7 +11,7 @@ namespace BilletLibraryUnitTest
         public void MCBilletPrisTest()
         {
             //arrange
-            var mc = new MC();
+            var mc = new MC("AB12345", DateTime.Now);
             //act
             decimal pris = mc.Pris();
             //assert
@@ -20,21 +21,11 @@ namespace BilletLibraryUnitTest
         public void KøretøjTypeTest()
         {
             //arrange
-            var mc = new MC();
+            var mc = new MC("AB12345", DateTime.Now);
             //act
             string køretøj = mc.Type();
             //assert
             Assert.AreEqual("Motorcykel", køretøj);
-        }
-        [TestMethod]
-        public void MCNummerpladeTjek()
-        {
-            //arrange
-            var mc = new MC();
-            //act
-            string nummerplade = mc.Nummerplade();
-            //assert
-            Assert.AreEqual("Motorcykel", nummerplade);
         }
     }
 }
