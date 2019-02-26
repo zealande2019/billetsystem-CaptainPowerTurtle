@@ -8,11 +8,19 @@ namespace BilletLibrary
     {
         protected string _nummerPlade;
         protected DateTime _dato;
-
         public abstract decimal Pris();
+        public virtual decimal RabatPris(bool brobizz = false)
+        {
+            decimal rabat = 0;
+            if (brobizz)
+            {
+                rabat = Pris() * 0.05M;
+            }
+            return Pris() - rabat;
+        }
         public abstract string Type();
 
-        protected void NummerPladeCheck()
+        protected void NummerPlade()
         {
             if (_nummerPlade.Length < 7 )
             {
