@@ -7,7 +7,7 @@ namespace StoreBaeltBilletLibrary
     public class Bil : BilletLibrary.Bil
     {
         /// <summary>
-        /// Opretter en ny instans af <see cref="Bil"/>
+        /// Opretter en ny instans af. <see cref="Bil"/>
         /// </summary>
         public Bil() { }
         /// <summary>
